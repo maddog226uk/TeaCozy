@@ -2,9 +2,22 @@ html {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
-
   background-color: black;
+  opacity: 0.9;
 }
+
+/* Sizing */
+
+.container {
+  margin: 0 auto;
+}
+
+#logo {
+  height: 50px;
+  margin: 10px;
+}
+
+
 
 /* Header Logo */
 
@@ -13,34 +26,151 @@ html {
   padding-left: 10px;
   height: 69px;
   border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  top: 0px;
+
 }
 
 .header li {
   list-style: none;
   text-decoration: underline;
-  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
 }
 
 .header li a {
   color: seashell;
 }
 
-#logo {
-  height: 50px;
-}
-
 .navigation {
   display: inline-flex;
   align-items: center;
   margin-left: auto;
-  color: white;
+  /* color: white; */
 }
 
 /* Main Content */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ /* .col-2 {
+  display: inline-flex;
+  
+} */
+
 
 .mission {
-  display: inline-flex;
-  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 1200px;
-  background-image: url("../images/img-mission-background.jpg")
+
 }
+
+.image1 {
+  margin-top: 100px;
+  height: 700px;
+  text-align: center;
+  background-image: url("../images/img-mission-background.jpg");  
+}
+
+.col-2 h2, .col-2 h4{
+  /* text-align: center; */
+  background-color: black;
+}
+
+
+
+/* Tea */
+
+.tea {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1000px;
+  /* align-content: center; */
+}
+
+.title {
+  text-align: center;
+}
+.row, .row1 {
+  display: inline-flex;
+  /* flex-wrap: wrap; */
+}
+
+.image2 img, .image3 img, .image4 img, .image5 img, .image6 img {
+  height: 200px;
+  width: 300px;
+  /* padding-left: 10px;
+  padding-right: 10px;   */
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* locations */
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 500px;
+  justify-content: center;
+  justify-items: center;
+  /* align-items: center; */
+  background-image: url("../images/img-locations-background.jpg")
+
+  /* background-position-y: 25%; */
+}
+
+/* .image7 {
+padding-bottom: 160px;
+} */
+
+.loc-1 h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+   /* width: 300px; */
+}
+
+
+.downtown, .east-bayside, .oakdale h3 {
+  text-align: center;
+}
+
+.downtown, .east-bayside, .oakdale {
+  flex-flow: row wrap;
+  background-color: black;
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+
+/* footer */
+
+.footer {
+  display: inline-flex;
+  height: 200px;
+}
+
+.footer h5, {
+  align-self: center;
+}
+
+

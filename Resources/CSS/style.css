@@ -27,7 +27,6 @@ html {
 
 .header {
   display: flex;
-  padding-left: 10px;
   height: 69px;
   border-bottom: 1px solid seashell;
   position: fixed;
@@ -83,15 +82,17 @@ html {
 
 .tea {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   width: 1000px;
 }
 
 .title {
   text-align: center;
 }
-.row, .row1 {
-  display: inline-flex;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
